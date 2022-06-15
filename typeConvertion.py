@@ -1,0 +1,5 @@
+apio_verde = input('En que año naciste?')
+age = 2022 - int(apio_verde)
+print(type(apio_verde))
+print(type(age))
+print(age)
