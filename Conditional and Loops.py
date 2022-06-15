@@ -1,5 +1,4 @@
-
-temperature: int = 21
+temperature = 21
 if temperature > 30:
     print("Temperature is over 30 Degrees")
     print("Drink some water boy")
@@ -71,38 +70,3 @@ for number in range(3):
         break
 else:
     print("Attempted 3 times and failed")
-
-
-# ############Nested Loops########### #
-for x in range(1, 6, 2):
-    for y in range(5):
-        print(f"({x}), ({y})")
-
-# ############ Iterables ############ #
-#  means you can iterate over it for range object, strings, lists
-
-for x in range(5):
-    break
-
-# ################################ #
-# ###########While Loops########## #
-# ################################ #
-
-number = 100
-
-while number > 0:
-    print(number)
-    number //=2
-
-command = ""
-while command.lower() != "quit":
-    command = input(">")
-    print("Echo", command)
-else:
-    print("Break Echo")
-
-while True:
-    comando = input(">")
-    if comando.lower() == "quit":
-        break
-
