@@ -51,6 +51,22 @@ else:
 # ################################ #
 
 # if age >= 18 and age < 65: (Long redundant code)
-if 18 <= age < 65: #(Cleaner code)
+if 18 <= age < 65:# (Cleaner code)
     print("Elegible")
 
+# ################################ #
+# ############For Loops########### #
+# ################################ #
+
+for number in range(1, 10, 2):
+    print("Loop", number, (number + 1) * ".")
+
+# for else
+success = True
+for number in range(3):
+    print("Lulz")
+    if success:
+        print("Success")
+        break
+else:
+    print("Attempted 3 times and failed")
