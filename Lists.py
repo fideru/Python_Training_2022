@@ -9,3 +9,5 @@ numbers = list(range(150))
 chars = list("Hello World")
 print(chars)
 print(len(chars))
+
+print(letters[0:3])
