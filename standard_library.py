@@ -78,8 +78,13 @@ import sqlite3
 movies_db = json.loads(Path("movies.json").read_text())
 
 with sqlite3.connect("db.sqlite3") as conn:
-
+    command0 = """CREATE TABLE Movies (
+    ID int,
+    Name varchar(255),
+    Year int);"""
     command = "INSERT INTO Movies Values(?, ?, ?)"
-    for movie in movies_db:
-        conn.execute(command, tuple(movie.values()))
-    conn.commit()
+#conn.execute(command0)
+for movie in movies_db:
+    conn.execute(command, tuple(movie.values()))\
+
+conn.commit()

@@ -11,7 +11,7 @@ def century_calculator(age):
 print((century_calculator(33)))
 
 
-# Integer ramge sum
+# Integer range sum
 def add_it_up(integer):
     try:
         result_value = sum(range(integer + 1))
